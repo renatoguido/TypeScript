@@ -1,0 +1,15 @@
+class Receita{
+    nome: string;
+    igredientes: string;
+    instrucoes: string;
+
+    constructor(nome:string, igredientes:string, instrucoes:string){
+        this.nome = nome;
+        this.igredientes = igredientes;
+        this.instrucoes = instrucoes;
+    }
+    
+}
+
+    const receita = new Receita("Bolo de banana", "massa e banana", "colque no fogo");
+    console.log(receita);
