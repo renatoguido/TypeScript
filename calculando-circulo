@@ -1,0 +1,31 @@
+class Circulo{
+    num: number;
+    raio: number;
+    pi: number;
+
+    constructor(num: number, raio: number, pi: number){
+        this.num = num;
+        this.raio = raio;
+        this.pi = pi;
+    }
+
+    calcularDiametro(): number{
+        return 2 * this.raio;
+    }
+
+    calcularCircunferencia(): number{
+        return 2 * this.pi * this.raio; 
+    }
+    
+    calcularArea(): number{
+        return this.pi * this.raio * this.raio;
+    }
+
+}
+
+    const total = new Circulo(20, 3, 3.14159);
+    console.log("Diametro: " + total.calcularDiametro());
+    console.log("Circunferência : " + total.calcularCircunferencia());
+    console.log("Area: " + total.calcularArea());
+
+
